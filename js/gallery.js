@@ -83,7 +83,7 @@ const markup = images
   )
   .join("");
 
-gallery.innerHTML = markup;
+gallery.insertAdjacentHTML("beforeend", markup);
 
 gallery.addEventListener("click", function (event) {
   event.preventDefault();
